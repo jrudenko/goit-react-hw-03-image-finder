@@ -22,7 +22,7 @@ class App extends Component {
     largeImageURL: null,
   };
 
-componentDidUpdate (prevProps, prevState) {
+  componentDidUpdate(prevProps, prevState) {
     const prevQuery = prevState.query;
     const nextQuery = this.state.query;
     const { page } = this.state;
@@ -126,6 +126,6 @@ componentDidUpdate (prevProps, prevState) {
       </Container>
     );
   }
-}
+};
 
 export default App;
